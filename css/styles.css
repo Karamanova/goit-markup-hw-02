@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color:#000000;
+    width: 1600px;
+    margin: 0 auto;
+}
+.page-top {
+    background-color: #FFFFFF;
+}
+.logo-web {
+    font-family: 'Raleway';
+    font-size: 26px;
+    color: #2196F3;
+    width: 145px;
+    height: 31px;
+}
+.logo-studio {
+    font-family: 'Raleway'
+    color:#000000;
+    font-size: 26px;
+    width: 145px;
+    height: 31px;
+}
+.hero-btn:focus
+color: #2196F3
+/* main styles */
