@@ -12,10 +12,9 @@
     --border-solid-color: #eeeeee;
 }
 body {
-    font-family: 'Roboto', sans-serif, 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color);
     color: var(--title-color);
-    width: 1600px;
 }
 .list {
     list-style: none;
@@ -24,20 +23,18 @@ body {
 .header {
 }
 /*Логотип*/
+.header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
 .logo-web {
-font-family: Raleway;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-letter-spacing: 0.03em;
 color: var(--accent-color);
 }
 .logo-studio {
-font-family: Raleway;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-letter-spacing: 0.03em;
 color: var(--secondary-color);
 }
 /*Коробочка для ссылок*/
@@ -45,26 +42,31 @@ color: var(--secondary-color);
 
 }
 /*Коробочка для ссылок слева*/
-.navigation-list{
+.navigation-list {
 
 }
+.navigation-list .link-current{
+color: var(--accent-color);
+}
 /*Ссылки в шапке*/
-.navigation-link {
+.navigation-link a{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--title-color);
+    text-decoration: none;
 }
 /*Коробочка для контактов справа*/
 .contacts-list {
 
 }
 /*Контакты в шапке*/
-.contacts-link {
+.contacts-link a{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--contacts-list-color);
+    text-decoration: none;
 }
 /*Настройка hover и focus*/
 .navigation-list a:hover,
@@ -85,6 +87,7 @@ color: var(--secondary-color);
 }
 /*Коробочка "Герой"*/
 .hero {
+    background-color: var(--first-background-color);
 }
 /*Название героя*/
 .hero-text {
@@ -95,16 +98,13 @@ color: var(--secondary-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-color);
-    background-color: var(--first-background-color);
 }
 /*Кнопка заказа в разделе герой*/
 .hero-btn {
     cursor: pointer;
+    font-family: inherit;
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
@@ -131,7 +131,6 @@ color: var(--secondary-color);
 }
 /*Описание правил*/
 .testimonials-description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -157,7 +156,6 @@ color: var(--secondary-color);
 /*Имена сотрудников*/
 .about-names {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
@@ -165,8 +163,6 @@ color: var(--secondary-color);
 }
 /*Должности сотрудников*/
 .about-jobs {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
@@ -174,23 +170,40 @@ color: var(--secondary-color);
 }
 /*Футер*/
 .contact-details {
+background-color: var(--first-background-color);
+}
+.footer-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-web {
+    color: var(--accent-color);
+}
 
+.footer-studio {
+    color: var(--primary-color);
 }
 /*Адрес в футере*/
-.contact-address {
-    font-weight: 400;
+.contact-address a{
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em
-    color: var(--primary-color)
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-style: normal;
 }
 /*Ссыдки в футере*/
-.contact-link {
-    font-weight: 400;
+.contact-link a{
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em
-    color: var(--footer-contact-color)
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    font-style: normal;
 }
 /*Страница портфолио*/
 /*Секция с кнопками фильтра*/
@@ -200,12 +213,12 @@ color: var(--secondary-color);
 /*Кнопки фильтра*/
 .filters-btn {
     cursor: pointer;
+    font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color)
+    color: var(--title-color);
 }
 /*Секция с перечнем проектов*/
 .project {
@@ -225,8 +238,6 @@ color: var(--secondary-color);
 }
 /*Тип проекта*/
 .project-type {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--contacts-list-color);
