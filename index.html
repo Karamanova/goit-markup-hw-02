@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/modern-normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
 </head>
 <body>
 <!--Шапка-->
-    <header>
-        <div class="header">
-    <a href="" class="header-logo"> <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+    <header class="page-header">
+        <div class="container header-container">
+    <a href="./index.html" class="header-logo"> <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
     <nav class="navigation">
     <ul class="navigation-list list">
         <li class="navigation-link"> <a href="./index.html" class="link-current">Студія</a></li>
@@ -31,61 +32,69 @@
     </header>
 <!--Герой-->
     <main>
-        <section class="hero">
-            <h1 class="hero-text">Ефективні рішення для <br>вашого бізнесу</h1>
+        <section class="hero section">
+            <div class="container">
+            <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero-btn">Замовити послугу</button>
+            </div>
         </section>
-<section class="testimonials">
+<section class="testimonials section">
+    <div class="container">
     <h2 class="visually-hidden">Правила роботи</h2>
-    <ul class="testimonial list">
-        <li class="testimonials-list">
+    <ul class="testimonials-scroll list">
+        <li class="testimonials-item">
             <h3 class="testimonials-text">Увага до деталей</h3>
             <p class="testimonials-description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
         </li>
-        <li class="testimonials-list">
+        <li class="testimonials-item">
             <h3 class="testimonials-text">Пунктуальність</h3>
             <p class="testimonials-description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
         </li>
-        <li class="testimonials-list">
+        <li class="testimonials-item">
             <h3 class="testimonials-text">Планування</h3>
             <p class="testimonials-description">Так само консультація з широким активом значною мірою зумовлює.</p>
         </li>
-        <li class="testimonials-list">
+        <li class="testimonials-item">
             <h3 class="testimonials-text">Сучасні технології</h3>
             <p class="testimonials-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
     </ul>
+    </div>
 </section>
-<section class="about-projects">
+<section class="about-projects section">
+    <div class="container">
     <h2 class="about-sections">Чим ми займаємося</h2>
-    <ul class="about-section list">
-        <li><img src="./images/keyboard.jpg" alt="створення коду за макетом" width="370"></li>
-        <li><img src="./images/cellphone.jpg" alt="виконання UX/UI дизайну" width="370"></li>
-        <li><img src="./images/rgb.jpg" alt="підбір кольору за допомогою RGB" width="370"></li>  
+    <ul class="about-scroll list">
+        <li class="about-item"><img src="./images/keyboard.jpg" alt="створення коду за макетом" width="370"></li>
+        <li class="about-item"><img src="./images/cellphone.jpg" alt="виконання UX/UI дизайну" width="370"></li>
+        <li class="about-item"><img src="./images/rgb.jpg" alt="підбір кольору за допомогою RGB" width="370"></li>  
 </ul>
+</div>
 </section>
-<section class="about-team">
+<section class="about-team section">
+    <div class="container">
     <h2 class="about-sections">Наша команда</h2>
-    <ul class="about-section list">
-        <li> <img src="./images/team-member1.jpg" alt="Ігор Дем'яненко" width="270">
+    <ul class="about-scroll list">
+        <li class="team-item"> <img src="./images/team-member1.jpg" alt="Ігор Дем'яненко" width="270">
             <h3 class="about-names">Ігор Дем'яненко</h3>
         <p lang="en" class="about-jobs">Product Designer</p></li>
-    <li> <img src="./images/team-member2.jpg" alt="Ольга Рєпіна" width="270">
+    <li class="team-item"> <img src="./images/team-member2.jpg" alt="Ольга Рєпіна" width="270">
         <h3 class="about-names">Ольга Рєпіна</h3>
     <p lang="en" class="about-jobs">Frontend Developer</p></li>
-    <li><img src="./images/team-member3.jpg" alt="Микола Тарасов" width="270">
+    <li class="team-item"><img src="./images/team-member3.jpg" alt="Микола Тарасов" width="270">
         <h3 class="about-names">Микола Тарасов</h3>
     <p lang="en" class="about-jobs">Marketing</p></li>
-    <li><img src="./images/team-member4.jpg" alt="Михайло Єрмаков" width="270">
+    <li class="team-item"><img src="./images/team-member4.jpg" alt="Михайло Єрмаков" width="270">
         <h3 class="about-names">Михайло Єрмаков</h3>
     <p lang="en" class="about-jobs">UI Designer</p></li>
     </ul>
+    </div>
 </section>
     </main>
-    <footer>
-        <div class="contact-details">
-            <a href="" class="footer-logo"> <span class="footer-web">Web</span><span class="footer-studio">Studio</span></a>
-            <address>
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <a href="./index.html" class="footer-logo"> <span class="footer-web">Web</span><span class="footer-studio">Studio</span></a>
+            <address class="contact-information">
                 <ul class="contact-detail list">
                     <li class="contact-address"><a href="https://goo.gl/maps/zb56BNehS5EqS8ZaA" rel="noopener" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li class="contact-link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
